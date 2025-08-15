@@ -9,6 +9,7 @@ const (
 	CATEGORIES_ROUTE = "/categories"
 	PREVIEW_ROUTE    = "/preview"
 	BOOK_ROUTE       = "/book"
+	AUTHOR_ROUTE     = "/author"
 	BOOKS_ROUTE      = "/books"
 	NEW_BOOKS_ROUTE  = "/new-books"
 	SEARCH_ROUTE     = "/search"
