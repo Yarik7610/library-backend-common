@@ -15,15 +15,17 @@ const (
 )
 
 type Route struct {
-	Path    string
-	Methods []string
+	FullPath       string
+	AllowedMethods []string
 }
 
 var PRIVATE_ROUTES = []Route{
-	{Path: ME_ROUTE, Methods: []string{"GET"}},
+	{FullPath: ME_ROUTE, AllowedMethods: []string{"GET"}},
 }
 
 var ADMIN_ROUTES = []Route{
-	{Path: CATALOG_ROUTE + AUTHORS_ROUTE, Methods: []string{"POST", "DELETE"}},
-	{Path: CATALOG_ROUTE + BOOKS_ROUTE, Methods: []string{"POST", "DELETE"}},
+	{FullPath: CATALOG_ROUTE + AUTHORS_ROUTE, AllowedMethods: []string{"POST"}},
+	{FullPath: CATALOG_ROUTE + AUTHORS_ROUTE + "/:authorID", AllowedMethods: []string{"DELETE"}},
+	{FullPath: CATALOG_ROUTE + BOOKS_ROUTE, AllowedMethods: []string{"POST"}},
+	{FullPath: CATALOG_ROUTE + BOOKS_ROUTE + "/:bookID", AllowedMethods: []string{"DELETE"}},
 }
