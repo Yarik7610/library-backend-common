@@ -8,11 +8,24 @@ const (
 	CATALOG_ROUTE    = "/catalog"
 	CATEGORIES_ROUTE = "/categories"
 	PREVIEW_ROUTE    = "/preview"
-	BOOK_ROUTE       = "/book"
 	AUTHORS_ROUTE    = "/authors"
 	BOOKS_ROUTE      = "/books"
 	NEW_BOOKS_ROUTE  = "/new-books"
 	SEARCH_ROUTE     = "/search"
 )
 
-var PRIVATE_ROUTES = []string{ME_ROUTE}
+type Route struct {
+	Path   string
+	Method string
+}
+
+var PRIVATE_ROUTES = []Route{
+	{Path: ME_ROUTE, Method: "GET"},
+}
+
+var ADMIN_ROUTES = []Route{
+	{Path: CATALOG_ROUTE + AUTHORS_ROUTE, Method: "POST"},
+	{Path: CATALOG_ROUTE + AUTHORS_ROUTE + "/:authorID", Method: "DELETE"},
+	{Path: CATALOG_ROUTE + BOOKS_ROUTE, Method: "POST"},
+	{Path: CATALOG_ROUTE + BOOKS_ROUTE + "/:bookID", Method: "DELETE"},
+}
