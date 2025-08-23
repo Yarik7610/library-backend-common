@@ -12,6 +12,7 @@ const (
 	BOOKS_ROUTE      = "/books"
 	NEW_BOOKS_ROUTE  = "/new-books"
 	SEARCH_ROUTE     = "/search"
+	NEW_ROUTE        = "/new"
 )
 
 type Route struct {
