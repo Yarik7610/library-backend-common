@@ -10,11 +10,12 @@ const (
 	PREVIEW_ROUTE    = "/preview"
 	AUTHORS_ROUTE    = "/authors"
 	BOOKS_ROUTE      = "/books"
-	NEW_BOOKS_ROUTE  = "/new-books"
 	SEARCH_ROUTE     = "/search"
 	NEW_ROUTE        = "/new"
 	POPULAR_ROUTE    = "/popular"
 	VIEWS_ROUTE      = "/views"
+
+	SUBSCRIPTIONS_ROUTE = "/subscriptions"
 )
 
 type Route struct {
@@ -24,6 +25,8 @@ type Route struct {
 
 var PRIVATE_ROUTES = []Route{
 	{FullPath: ME_ROUTE, AllowedMethods: []string{"GET"}},
+	{FullPath: SUBSCRIPTIONS_ROUTE + CATEGORIES_ROUTE, AllowedMethods: []string{"GET", "POST"}},
+	{FullPath: SUBSCRIPTIONS_ROUTE + CATEGORIES_ROUTE + "/:categoryName", AllowedMethods: []string{"DELETE"}},
 }
 
 var ADMIN_ROUTES = []Route{
