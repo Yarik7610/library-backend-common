@@ -14,6 +14,7 @@ const (
 	SEARCH_ROUTE     = "/search"
 	NEW_ROUTE        = "/new"
 	POPULAR_ROUTE    = "/popular"
+	VIEWs_ROUTE      = "/views"
 )
 
 type Route struct {
