@@ -4,6 +4,7 @@ const (
 	SIGN_UP_ROUTE = "/sign-up"
 	SIGN_IN_ROUTE = "/sign-in"
 	ME_ROUTE      = "/me"
+	EMAILS_ROUTE  = "/emails"
 
 	CATALOG_ROUTE    = "/catalog"
 	CATEGORIES_ROUTE = "/categories"
