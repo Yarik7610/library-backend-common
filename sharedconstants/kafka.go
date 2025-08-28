@@ -7,5 +7,5 @@ const (
 )
 
 const (
-	BOOK_CREATED_TOPIC = "book.created"
+	BOOK_ADDED_TOPIC = "book.added"
 )
