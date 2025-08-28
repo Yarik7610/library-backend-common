@@ -5,3 +5,7 @@ const (
 	KAFKA_NODE_2_ADDR = "kafka-2:9092"
 	KAFKA_NODE_3_ADDR = "kafka-3:9092"
 )
+
+const (
+	BOOK_CREATED_TOPIC = "book.created"
+)
