@@ -7,5 +7,6 @@ const (
 )
 
 const (
-	BOOK_ADDED_TOPIC = "book.added"
+	BOOK_ADDED_TOPIC             = "book.added"
+	BOOK_ADDED_CONSUMER_GROUP_ID = "book-added-consumer-group-id"
 )
