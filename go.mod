@@ -1,6 +1,6 @@
 module github.com/Yarik7610/library-backend-common
 
-go 1.24.5
+go 1.25.6
 
 require github.com/segmentio/kafka-go v0.4.49
 
