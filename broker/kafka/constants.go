@@ -1,4 +1,4 @@
-package sharedconstants
+package kafka
 
 const (
 	KAFKA_NODE_1_ADDR = "kafka-1:9092"
