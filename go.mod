@@ -2,9 +2,4 @@ module github.com/Yarik7610/library-backend-common
 
 go 1.25.6
 
-require github.com/segmentio/kafka-go v0.4.49
-
-require (
-	github.com/klauspost/compress v1.15.9 // indirect
-	github.com/pierrec/lz4/v4 v4.1.15 // indirect
-)
+require github.com/golang-jwt/jwt/v5 v5.3.1
