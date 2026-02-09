@@ -1,4 +1,4 @@
-package headers
+package header
 
 const (
 	USER_ID  = "X-User-ID"

@@ -1,4 +1,4 @@
-package routes
+package route
 
 const (
 	SIGN_UP = "/sign-up"
