@@ -1,4 +1,4 @@
-package http
+package headers
 
 const (
 	USER_ID  = "X-User-ID"
