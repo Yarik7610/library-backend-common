@@ -1,4 +1,4 @@
-package sharedconstants
+package http
 
 const (
 	SIGN_UP_ROUTE = "/sign-up"
