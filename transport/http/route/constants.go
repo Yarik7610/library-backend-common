@@ -1,6 +1,8 @@
 package route
 
 const (
+	METRICS = "/metrics"
+
 	SIGN_UP = "/sign-up"
 	SIGN_IN = "/sign-in"
 	ME      = "/me"
