@@ -121,7 +121,7 @@ const file_proto_catalog_proto_rawDesc = "" +
 	"\x1aBookCategoryExistsResponse\x12\x16\n" +
 	"\x06exists\x18\x01 \x01(\bR\x06exists2o\n" +
 	"\x0eCatalogService\x12]\n" +
-	"\x12BookCategoryExists\x12\".catalog.BookCategoryExistsRequest\x1a#.catalog.BookCategoryExistsResponseB\x18Z\x16transport/grpc/catalogb\x06proto3"
+	"\x12BookCategoryExists\x12\".catalog.BookCategoryExistsRequest\x1a#.catalog.BookCategoryExistsResponseB%Z#transport/grpc/microservice/catalogb\x06proto3"
 
 var (
 	file_proto_catalog_proto_rawDescOnce sync.Once

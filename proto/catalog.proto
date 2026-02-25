@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package catalog;
 
-option go_package = "transport/grpc/catalog";
+option go_package = "transport/grpc/microservice/catalog";
 
 // BookCategoryExists request payload
 message BookCategoryExistsRequest {

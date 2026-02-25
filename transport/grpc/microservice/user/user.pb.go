@@ -121,7 +121,7 @@ const file_proto_user_proto_rawDesc = "" +
 	"\x1aGetEmailsByUserIDsResponse\x12\x16\n" +
 	"\x06emails\x18\x01 \x03(\tR\x06emails2f\n" +
 	"\vUserService\x12W\n" +
-	"\x12GetEmailsByUserIDs\x12\x1f.user.GetEmailsByUserIDsRequest\x1a .user.GetEmailsByUserIDsResponseB\x15Z\x13transport/grpc/userb\x06proto3"
+	"\x12GetEmailsByUserIDs\x12\x1f.user.GetEmailsByUserIDsRequest\x1a .user.GetEmailsByUserIDsResponseB\"Z transport/grpc/microservice/userb\x06proto3"
 
 var (
 	file_proto_user_proto_rawDescOnce sync.Once

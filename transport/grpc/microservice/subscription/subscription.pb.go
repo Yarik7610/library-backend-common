@@ -121,7 +121,7 @@ const file_proto_subscription_proto_rawDesc = "" +
 	"+GetBookCategorySubscribedUserEmailsResponse\x12\x16\n" +
 	"\x06emails\x18\x01 \x03(\tR\x06emails2\xb2\x01\n" +
 	"\x13SubscriptionService\x12\x9a\x01\n" +
-	"#GetBookCategorySubscribedUserEmails\x128.subscription.GetBookCategorySubscribedUserEmailsRequest\x1a9.subscription.GetBookCategorySubscribedUserEmailsResponseB\x1dZ\x1btransport/grpc/subscriptionb\x06proto3"
+	"#GetBookCategorySubscribedUserEmails\x128.subscription.GetBookCategorySubscribedUserEmailsRequest\x1a9.subscription.GetBookCategorySubscribedUserEmailsResponseB*Z(transport/grpc/microservice/subscriptionb\x06proto3"
 
 var (
 	file_proto_subscription_proto_rawDescOnce sync.Once

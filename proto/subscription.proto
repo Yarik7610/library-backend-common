@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package subscription;
 
-option go_package = "transport/grpc/subscription";
+option go_package = "transport/grpc/microservice/subscription";
 
 // GetBookCategorySubscribedUserEmails request payload
 message GetBookCategorySubscribedUserEmailsRequest {
