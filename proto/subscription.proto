@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package subscription;
+
+option go_package = "transport/grpc/subscription";
+
+// GetBookCategorySubscribedUserEmails request payload
+message GetBookCategorySubscribedUserEmailsRequest {
+	string book_category = 1;
+}
+
+// GetBookCategorySubscribedUserEmails response payload
+message GetBookCategorySubscribedUserEmailsResponse {
+	repeated string emails = 1;
+}
+
+// SubscriptionService gathers all internal gRPC methods provdided by Subscription Microservice
+service SubscriptionService {
+	// GetBookCategorySubscribedUserEmails returns emails of all users subscribed to the given book category
+	// Errors:
+  // - codes.Internal — internal server error
+	rpc GetBookCategorySubscribedUserEmails(GetBookCategorySubscribedUserEmailsRequest) returns (GetBookCategorySubscribedUserEmailsResponse);
+}

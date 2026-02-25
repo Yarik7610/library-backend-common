@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "transport/grpc/user";
+
+// GetEmailsByUserIDs request payload
+message GetEmailsByUserIDsRequest {
+	repeated uint64 user_ids = 1;
+}
+
+// GetEmailsByUserIDs response payload
+message GetEmailsByUserIDsResponse {
+	repeated string emails = 1;
+}
+
+// UserService gathers all internal gRPC methods provdided by User Microservice
+service UserService {
+	// GetEmailsByUserIDs returns a list of emails for given user IDs
+	// Errors:
+  // - codes.Internal — internal server error
+  // - codes.InvalidArgument - bad request
+	rpc GetEmailsByUserIDs(GetEmailsByUserIDsRequest) returns (GetEmailsByUserIDsResponse);
+}

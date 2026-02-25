@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package catalog;
+
+option go_package = "transport/grpc/catalog";
+
+// BookCategoryExists request payload
+message BookCategoryExistsRequest {
+	string book_category = 1;
+}
+
+// BookCategoryExists response payload
+message BookCategoryExistsResponse {
+	bool exists = 1;
+}
+
+// CatalogService gathers all internal gRPC methods provdided by Catalog Microservice
+service CatalogService {
+	// BookCategoryExists returns boolean flag decribing book category existence
+	// Errors:
+  // - codes.Internal — internal server error
+	rpc BookCategoryExists(BookCategoryExistsRequest) returns (BookCategoryExistsResponse);
+}
